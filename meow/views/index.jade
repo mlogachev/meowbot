@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1 Tweets
+  #tweets
+  ul
+    for tweet in tweets
+        li 
+          p= tweet.id
+          p= tweet.rel
+          p= tweet.text
+    else
+        li sorry, no tweets
